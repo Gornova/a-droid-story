@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="10" tileheight="10" nextobjectid="3">
+ <tileset firstgid="1" name="7dlibgdxTileSet" tilewidth="10" tileheight="10" tilecount="625" columns="25">
+  <image source="spritesheet.png" width="256" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="teleport" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="collectable" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="repairStation" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="trap" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="177">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAcxDMyMJxkwMTEAjeg/kcMqHgDlfXjcxdI/wYGBMamH1keF4Dpe4SmdgMDcfqRzcGFsemHhT+6O3BhdADzPzZ/wAAh/ch2ovufWP3kxj8lAAD6tTrC
+  </data>
+ </layer>
+ <layer name="walls" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJw7xcDAcBoHPsNAGDzGI/eUSvpP4XEXMfrR1SC7i1L9f4D4LxIWZ0TIiTFC3CvKyIACkPUj++0MAfdg0/8YTRyZL8GI6SZS9JMafiD/IvuVWuGPHsb/kNSgy+FShwsAAC1cPFA=
+  </data>
+ </layer>
+ <layer name="entities" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAc1GERSyXDHEZKHTLMwHQkDAIWeNSSE96DEUwnrISqAADg9wPe
+  </data>
+ </layer>
+</map>

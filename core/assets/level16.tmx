@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="10" tileheight="10" nextobjectid="3">
+ <tileset firstgid="1" name="7dlibgdxTileSet" tilewidth="10" tileheight="10" tilecount="625" columns="25">
+  <image source="spritesheet.png" width="256" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="teleport" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="playerTeleport" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="collectable" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="door" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="repairStation" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="key" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="trap" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="horizontal" type="bool" value="true"/>
+    <property name="movingTrap" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="177">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="block" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAcuDEyMGxggOBHWDCp+jdQaD+pgNr2b8CDidGPCxOrn1L7qeF/SvQT42dqAQBVSjKV
+  </data>
+ </layer>
+ <layer name="walls" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJw7xcDAcJoAPsOAGzzGIwcDT0nUL8HIwPCXAYH/kagfn33E6BdjJD4siPE/PrcNRv3o4Y8vLogJP1qmnz843Els+gEA1tU0CQ==
+  </data>
+ </layer>
+ <layer name="entities" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAdSKWh2YMdTEfD+EAdEpsRh34LGto/WAE90g8ABzwIlg==
+  </data>
+ </layer>
+</map>
