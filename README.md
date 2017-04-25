@@ -1,5 +1,5 @@
 A droid story
-v1.0
+v1.1
 A game made in one week by Random tower of games - 2017
 http://randomtower.blogspot.it
 
@@ -27,3 +27,9 @@ In order to run a droid story, you need Java 8 and double click on the jar to ru
 Or run using command line:
 
 java -jar Adroidstory.jar
+
+
+5. Changes
+
+- expand text on game over screen
+- 5 new levels !
