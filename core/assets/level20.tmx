@@ -96,17 +96,17 @@
  </tileset>
  <layer name="background" width="16" height="12">
   <data encoding="base64" compression="zlib">
-   eJzbwMDAsGGQYGIAJXrxmQEDJ/FgYvQT47/hrJ8YQIv4JxcDAAE9W3A=
+   eJxjYBj6IJ6RgeEkAyb+DcXY5E4i6XcD6t/AgIkfQTE2uQ1o+h8xkI6pqZ9S91OifygDAAnOP00=
   </data>
  </layer>
  <layer name="walls" width="16" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgcQIKRgeEvA2Eszohd/1MgPgXEp/HgM0D8GIf9T/HIEaNmVD8Dwx8G/HH3D49+MUb8cQfDojjin1wAAE65Nc8=
+   eJxjYBhYcAqIT5OJzwDxYwrsfkoj/RKMDAzijLj5hPSLAdWKMuLmE9JPLKCG/j9A/JdM/I8Cu6kFAHtPJ+0=
   </data>
  </layer>
  <layer name="entities" width="16" height="12">
   <data encoding="base64" compression="zlib">
-   eJybzsDAMH0QYFIANfRb4NBPjBsJyeGykxT9jEhiFljU4HM/pfZT4n9iAD73E6ufWhgA3zRBxA==
+   eJxjYBj6IBWH+HQoxqauDk0tIxH6cYHpaJhUdZTqJ6SeXIBPvwUF5g4mAAA98A+q
   </data>
  </layer>
 </map>

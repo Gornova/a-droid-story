@@ -346,10 +346,11 @@ public class GameScreen implements Screen {
 	public void render(float delta) {
 		if (player.nextLevel) {
 			level++;
-			if (level >= 20) {
+			if (level > 25) {
 				batch.begin();
 				batch.draw(gameBackground, 0, 0);
 				font.draw(batch, "You win ?", 240, 240);
+				font.draw(batch, "Press ESC to continue", 180, 200);
 				batch.end();
 				return;
 			}
@@ -360,6 +361,7 @@ public class GameScreen implements Screen {
 			batch.begin();
 			batch.draw(gameBackground, 0, 0);
 			font.draw(batch, "Game Over", 240, 240);
+			font.draw(batch, "Press ESC to continue", 180, 200);
 			batch.end();
 			return;
 		}
