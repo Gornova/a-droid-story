@@ -48,12 +48,16 @@ public class GameScreen implements Screen {
 	private TextureRegion collectBarOne;
 	private TextureRegion collectBarTwo;
 	private TextureRegion collectBarThree;
-	private int level = 1;
 	private LevelLoadingMessage levelLoadingMessage;
 	private Texture gameBackground;
 	private Texture light;
 	private FrameBuffer lightBuffer;
 	private TextureRegion lightBufferRegion;
+
+	private int level;
+	public static final int TOTAL_LEVELS = 25;
+	public static int unlockedLevel = 2;
+
 	public static Sound soundDoorClosed;
 	public static Sound soundError;
 	public static Sound soundTeleport;
@@ -62,8 +66,9 @@ public class GameScreen implements Screen {
 	public static Sound soundCollect;
 	public static Music music;
 
-	public GameScreen(Game game) {
+	public GameScreen(Game game, int level) {
 		this.game = game;
+		this.level = level;
 		create();
 	}
 
@@ -346,7 +351,7 @@ public class GameScreen implements Screen {
 	public void render(float delta) {
 		if (player.nextLevel) {
 			level++;
-			if (level > 25) {
+			if (level > TOTAL_LEVELS) {
 				batch.begin();
 				batch.draw(gameBackground, 0, 0);
 				font.draw(batch, "You win ?", 240, 240);
@@ -354,6 +359,7 @@ public class GameScreen implements Screen {
 				batch.end();
 				return;
 			}
+			unlockedLevel++;
 			create();
 			return;
 		}
@@ -635,10 +641,6 @@ public class GameScreen implements Screen {
 				}
 			}
 		}
-		// List<PlayerTeleport> pts =
-		// entities.stream().filter(PlayerTeleport.class::isInstance)
-		// .map(PlayerTeleport.class::cast).filter(pt -> pt.number ==
-		// number).collect(Collectors.toList());
 		if (pts == null || pts.isEmpty()) {
 			for (Entity entity : entities) {
 				if (entity instanceof PlayerTeleport) {
@@ -649,10 +651,6 @@ public class GameScreen implements Screen {
 				}
 			}
 			return null;
-			// return
-			// entities.stream().filter(PlayerTeleport.class::isInstance).map(PlayerTeleport.class::cast)
-			// .filter(pt -> pt.number ==
-			// 1).collect(Collectors.toList()).get(0);
 		}
 		return pts.get(0);
 	}
