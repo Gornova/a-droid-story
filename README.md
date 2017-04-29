@@ -19,10 +19,10 @@ Arrows or WASD to move the droid
 
 ## Thanks to
 
-Libgdx
-Hiero
-For the music: 	http://www.orangefreesounds.com/ambient-piano-loop-105-bpm/
-libgdx transitions: https://github.com/digital-thinking/libgdx-transitions
+* Libgdx
+* Hiero
+* For the music: 	http://www.orangefreesounds.com/ambient-piano-loop-105-bpm/
+* libgdx transitions: https://github.com/digital-thinking/libgdx-transitions
 
 
 ## Problems ?
