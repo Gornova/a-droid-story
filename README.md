@@ -1,5 +1,5 @@
 A droid story
-v1.1
+v1.2
 A game made in one week by Random tower of games - 2017
 http://randomtower.blogspot.it
 
@@ -19,6 +19,7 @@ Arrows or WASD to move the droid
 Libgdx
 Hiero
 For the music: 	http://www.orangefreesounds.com/ambient-piano-loop-105-bpm/
+libgdx transitions: https://github.com/digital-thinking/libgdx-transitions
 
 
 4. Problems ?
@@ -31,5 +32,10 @@ java -jar Adroidstory.jar
 
 5. Changes
 
+1.2
+- added transitions between game states
+- added level selection
+
+1.1
 - expand text on game over screen
 - 5 new levels !
