@@ -1,14 +1,26 @@
 package it.randomtower;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Interpolation;
+import com.ixeption.libgdx.transitions.FadingGame;
+import com.ixeption.libgdx.transitions.impl.ColorFadeTransition;
 
-public class Launcher extends Game {
+public class Launcher extends FadingGame {
+
+	private ColorFadeTransition colorFadeInTransition;
 
 	@Override
 	public void create() {
-		Screen menu = new MenuScreen(this);
-		this.setScreen(menu);
+		colorFadeInTransition = new ColorFadeTransition(Color.BLACK, Interpolation.exp10);
+		setTransition(colorFadeInTransition, 1);
+		batch = new SpriteBatch();
+
+		Screen start = new ScreenAdapter();
+		this.setScreen(start);
+		this.setScreen(new MenuScreen(this));
 	}
 
 }
