@@ -153,7 +153,9 @@ public class GameScreen implements Screen {
 		soundTeleport = Gdx.audio.newSound(Gdx.files.internal("sound/teleport.wav"));
 		soundError = Gdx.audio.newSound(Gdx.files.internal("sound/error.wav"));
 		soundDoorClosed = Gdx.audio.newSound(Gdx.files.internal("sound/doorClosed.wav"));
-		music = Gdx.audio.newMusic(Gdx.files.internal("sound/Ambient-piano-loop-105-bpm.wav"));
+		music = Gdx.audio.newMusic(Gdx.files.internal("sound/Ambient-piano-loop-105-bpm.ogg"));
+		music.play();
+		System.out.println("Music loaded correctly !");
 		// Light system
 		FLight.initLights();
 		FLight.isLightRendering = false;
@@ -670,6 +672,8 @@ public class GameScreen implements Screen {
 	public void pause() {
 		if (music.isPlaying()) {
 			music.pause();
+		} else {
+			music.play();
 		}
 	}
 
@@ -677,6 +681,8 @@ public class GameScreen implements Screen {
 	public void resume() {
 		if (!music.isPlaying()) {
 			music.play();
+		} else {
+			music.pause();
 		}
 	}
 
@@ -684,6 +690,8 @@ public class GameScreen implements Screen {
 	public void hide() {
 		if (music.isPlaying()) {
 			music.pause();
+		} else {
+			music.play();
 		}
 	}
 }
