@@ -1,6 +1,6 @@
 # A droid story 
 
-v1.2
+v1.3
 
 A game made in one week by Random tower of games - 2017
 
@@ -34,6 +34,9 @@ java -jar Adroidstory.jar
 
 
 ## Changes
+
+### 1.3
+- fixed music issue converting wav to ogg
 
 ### 1.2
 - added transitions between game states
